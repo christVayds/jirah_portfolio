@@ -1,0 +1,369 @@
+/* 
+
+    "Sour Gummy", sans-serif;
+    "Pixelify Sans", sans-serif;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #6200ea;
+    --secondary: #03dac6;
+    --error: #b00020;
+    --background: #00010c;
+    --text-primary: #d4d4d4;
+    --text-secondary: #757575;
+    --border: #363636;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 18px;
+    background-color: var(--background);
+    color: var(--text-primary);
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    padding: 10px;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER */
+.header .side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .side.logo{
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    padding: 10px;
+}
+
+/* navigation */
+.header .side .navItem{
+    /* border: 1px solid var(--border); */
+    padding: 10px;
+    margin-left: 10px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+    transition: color .5s ease;
+}
+
+/* bold the selected navigation bar */
+.header .side .navItem.selected{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* CATEGORIES */
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.categories .list{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.categories .list .listItem{
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+
+.categories .list .listItem.selected{
+    background-color: var(--primary);
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.cat_class{
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cat_class.show{
+    display: flex;
+}
+
+.cat_class .display_art{
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cat_class .display_art .overflow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .5);
+    transition: background-color 0.2s ease;
+}
+
+.cat_class .display_art img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cat_class .display_art .classname{
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ABOUT */
+.body{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.body .side{
+    width: 50%;
+}
+
+.body .side .greetings{
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.body .side .greetings p{
+    color: var(--text-secondary);
+}
+
+.body .side .greetings p span{
+    color: var(--primary);
+}
+
+.body .side .about{
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2.5px;
+}
+
+.body .side .about span{
+    color: var(--primary);
+}
+
+.body .side .education{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.body .side .edutitle{
+    padding: 5px;
+    padding-left: 10px;
+    color: var(--text-primary);
+}
+
+.body .side .eduItem{
+    width: 100%;
+    margin-top: 20px;
+    min-height: 100px;
+    display: flex;
+}
+
+.body .side .eduItem .image{
+    width: 200px;
+    height: 200px;
+}
+
+.body .side .eduItem .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body .side .eduItem .school{
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+.body .side .eduItem .school h4{
+    letter-spacing: 2px;
+}
+
+.body .side .software{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.body .side .software .software_item{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.body .side .software .software_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* right side of about page */
+.body .about_info{
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body .about_info .my_photo{
+    border: 1px solid var(--border);
+    width: 500px;
+    height: 500px;
+}
+
+/* VIEW */
+.view{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.view .toView{
+    width: 80%;
+    min-height: 500px;
+}
+
+.view .toView .categ{
+    text-align: center;
+    margin: 10px;
+}
+
+.view .toView .categ.category_name{
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.view .toView .categ.gallery{
+    column-count: 3;
+    column-gap: 15px;
+}
+
+.view .toView .categ.gallery img{
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    object-fit: cover;
+}
+
+.contact{
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contact_content{
+    text-align: center;
+}
+
+.contact .contact_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.contact .contact_item .contactLink{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: var(--text-secondary);
+}
+
+/* effects here */
+
+.header .side .navItem:hover:not(.selected){
+    font-weight:600;
+    color: var(--primary);
+}
+
+/* for the display art image overflow - make it darker when hover */
+.cat_class .display_art:hover .overflow{
+    background-color: rgb(0, 0, 0, .8);
+}
+
+/* for contact link */
+.contact .contact_item .contactLink:hover{
+    color: var(--text-primary);
+}
+
+.categories .list .listItem:hover{
+    background-color: var(--primary);
+}
+
+/* for debugging layout */
+/* .showBorder{
+    border: 1px solid var(--border);
+} */
