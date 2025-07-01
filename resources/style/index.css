@@ -14,13 +14,23 @@
 }
 
 :root{
-    --primary: #6200ea;
-    --secondary: #03dac6;
-    --error: #b00020;
-    --background: #00010c;
-    --text-primary: #d4d4d4;
-    --text-secondary: #757575;
-    --border: #363636;
+    --primary: #7b6fff;
+    --secondary: #372f8b;
+    --error: #972f42;
+    --background: #17153B;
+    --text-primary: #C8ACD6;
+    --text-secondary: #937f9c;
+    --border: #3c343f;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    border-radius: 10px;
 }
 
 a{
@@ -35,6 +45,37 @@ body {
     color: var(--text-primary);
     width: 100%;
     height: 100%;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.cert_image{
+    min-width: 500px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border);
+}
+
+.cert_image img{
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.popup.show{
+    display: flex;
 }
 
 .container{
@@ -72,9 +113,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid transparent;
 
     transition: color .5s ease;
+    transition: border-bottom .5s ease;
 }
 
 /* bold the selected navigation bar */
@@ -105,8 +148,13 @@ body {
     border-radius: 10px;
     width: 200px;
     margin-right: 10px;
-    border: 2px solid var(--primary);
     cursor: pointer;
+
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: left;
+    transition: 0.5s ease;
 }
 
 .categories .list .listItem.selected{
@@ -134,6 +182,7 @@ body {
     margin: 10px;
     overflow: hidden;
     position: relative;
+    animation: appear 0.5s ease-in-out;
 }
 
 .cat_class .display_art .overflow{
@@ -142,7 +191,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.55);
     transition: background-color 0.2s ease;
 }
 
@@ -156,6 +205,7 @@ body {
 
 .cat_class .display_art .classname{
     font-size: 40px;
+    text-align: center;
     letter-spacing: 2px;
     position: absolute;
     top: 50%;
@@ -211,6 +261,7 @@ body {
     padding: 5px;
     padding-left: 10px;
     color: var(--text-primary);
+    letter-spacing: 5px;
 }
 
 .body .side .eduItem{
@@ -264,18 +315,69 @@ body {
     margin-right: 10px;
 }
 
+/* certificate */
+.education .certificate{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.education .certificate .cert_link{
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.education .certificate .cert_lists_label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.education .certificate .cert_lists{
+    list-style: none;
+    padding-left: 30px;
+}
+
+.education .certificate .cert_lists li{
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+/* Experience */
+.education .experience{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.education .experience .company{
+    color: var(--text-secondary);
+}
+
+.education .experience .works{
+    list-style:circle;
+    padding-left: 30px;
+    color: var(--text-secondary);
+}
+
 /* right side of about page */
 .body .about_info{
     min-height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: appear 0.5s ease-in-out;
 }
 
 .body .about_info .my_photo{
-    border: 1px solid var(--border);
     width: 500px;
     min-height: 500px;
+}
+
+.body .about_info .my_photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* VIEW */
@@ -312,6 +414,8 @@ body {
     margin-bottom: 15px;
     display: block;
     object-fit: cover;
+    transition: transform 0.3s ease;
+    animation: appear 0.5s ease-in-out;
 }
 
 .contact{
@@ -350,9 +454,13 @@ body {
     color: var(--primary);
 }
 
+.header .side .navItem:hover{
+    border-bottom: 3px solid var(--secondary);
+}
+
 /* for the display art image overflow - make it darker when hover */
 .cat_class .display_art:hover .overflow{
-    background-color: rgb(0, 0, 0, .8);
+    background-color: rgba(5, 1, 17, 0.8);
 }
 
 /* for contact link */
@@ -360,8 +468,32 @@ body {
     color: var(--text-primary);
 }
 
-.categories .list .listItem:hover{
-    background-color: var(--primary);
+.categories .list .listItem:hover:not(.selected){
+    color: var(---dark);
+    background-size: 100% 100%;
+    transition: 0.4s ease;
+}
+
+.education .certificate .cert_lists li:hover{
+    color: var(--text-primary);
+}
+
+.view .toView .categ.gallery img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* KEYFRAMES and animations */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* for debugging layout */

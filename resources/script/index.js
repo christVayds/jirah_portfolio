@@ -7,17 +7,17 @@ const data = {
     "calligraphy": [],
     "chibi_art": [],
     "indoor_signages": [],
-    "product_promotional_matterials": [],
-    "tshirt_print": [],
+    "promotional_materials": ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    "tshirt_print": ["1.png", "2.jpg"],
     "other_graphics_matterial": [],
-    "gouache": [],
-    "acrylic": [],
-    "water": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg"],
-    "text_effects": [],
-    "image_wrapping": [],
-    "brand_identity": [],
-    "book_cover": [],
-    "events_matterials": []
+    "gouache": ["1.png", "2.png", "3.jpg", "4.jpg", "5.jpg"],
+    "acrylic": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "water": ["1.png", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "text_effects": ["1.png"],
+    "image_wrapping": ["1.png"],
+    "brand_identity": ["1.png"],
+    "book_cover": ["1.png", "2.png"],
+    "event_materials": ["1.jpg", "2.png", "3.png", "4.png", "5.png"]
 }
 
 const names = {
@@ -27,14 +27,14 @@ const names = {
     "calligraphy": "Calligraphy", 
     "chibi_art": "Chibi art", 
     "indoor_signages": "Indoor Signages", 
-    "product_promotional_matterials": "Product Promotional Matterials", 
-    "tshirt_print": "T-Shirt Print", 
+    "promotional_materials": "Product Promotional Materials", 
+    "tshirt_print": "T-Shirt Design", 
     "other_graphics_matterial": "Other Graphic Matterials",
     "text_effects": "Text Effects",
     "image_wrapping": "Image Wrapping",
     "brand_identity": "Brand Identity",
     "book_cover": "Book Cover",
-    "events_matterial": "Events Matterial"
+    "event_materials": "Events Matterial"
 }
 
 // get view
