@@ -261,6 +261,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    margin-right: 10px;
 }
 
 /* right side of about page */
@@ -274,7 +275,7 @@ body {
 .body .about_info .my_photo{
     border: 1px solid var(--border);
     width: 500px;
-    height: 500px;
+    min-height: 500px;
 }
 
 /* VIEW */
