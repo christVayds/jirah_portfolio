@@ -12,7 +12,7 @@ const data = {
     "other_graphics_matterial": [],
     "gouache": [],
     "acrylic": [],
-    "water": [],
+    "water": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg"],
     "text_effects": [],
     "image_wrapping": [],
     "brand_identity": [],
@@ -23,7 +23,7 @@ const data = {
 const names = {
     "gouache": "Gouache Painting",
     "acrylic": "Acrylic Painting",
-    "water": "Water Painting",
+    "water": "Watercolor Painting",
     "calligraphy": "Calligraphy", 
     "chibi_art": "Chibi art", 
     "indoor_signages": "Indoor Signages", 
