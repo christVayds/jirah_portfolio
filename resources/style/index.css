@@ -62,14 +62,15 @@ body {
 }
 
 .cert_image{
-    min-width: 500px;
+    width: fit-content;
     overflow: hidden;
     position: relative;
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--error); */
+    text-align: center;
 }
 
 .cert_image img{
-    width: 800px;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -576,6 +577,6 @@ body {
 }
 
 /* for debugging layout */
-/* .showBorder{
+.showBorder{
     border: 1px solid var(--border);
-} */
+}
