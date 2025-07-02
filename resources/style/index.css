@@ -14,12 +14,12 @@
 }
 
 :root{
-    --primary: #7b6fff;
-    --secondary: #372f8b;
+    --primary: #6E9FC1;
+    --secondary: #A3CAE9;
     --error: #972f42;
-    --background: #17153B;
-    --text-primary: #C8ACD6;
-    --text-secondary: #937f9c;
+    --background: #395A7F;
+    --text-primary: #E9ECEE;
+    --text-secondary: #ACACAC;
     --border: #3c343f;
 }
 
@@ -262,10 +262,9 @@ body {
     margin-top: 20px;
     padding: 10px;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    text-align: justify;
-    text-justify: inter-word;
+    flex-direction: column;
 }
 
 .body .side{
@@ -415,6 +414,7 @@ body {
     justify-content: end;
     animation: appear 0.5s ease-in-out;
     margin-bottom: 20px;
+    order: -1;
 }
 
 .body .about_info .my_photo{
