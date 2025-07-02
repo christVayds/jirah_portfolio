@@ -577,6 +577,6 @@ body {
 }
 
 /* for debugging layout */
-/* .showBorder{
+.showBorder{
     border: 1px solid var(--border);
-} */
+}
