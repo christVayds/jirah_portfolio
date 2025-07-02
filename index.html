@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="resources/style/index.css">
     <script src="https://kit.fontawesome.com/9515269a08.js" crossorigin="anonymous"></script>
     <title>Jirah</title>
 </head>
 <body>
-    <div class="container showBorder">
+    <div class="container">
         <div class="header">
             <div class="side logo showBorder">
                 <h1>Jirah Mae Teruel</h1>
                 <p>Graphic Artist</p>
             </div>
-            <div class="side navigation showBorder">
+            <div class="side navigation desktop showBorder">
                 <a href="about.html" class="navItem">About</a>
                 <a href="index.html" class="navItem selected">Works</a>
                 <a href="#contact" class="navItem">Contact</a>
+            </div>
+
+            <div class="side navigation mobile showBorder">
+                <i class="fa-solid fa-bars"></i>
+                <div class="drop_down_content showBorder">
+                    <a href="about.html" class="dropItem selected">About</a>
+                    <a href="index.html" class="dropItem">Works</a>
+                    <a href="#contact" class="dropItem">Contact</a>
+                </div>
             </div>
         </div>
         <div class="categories showBorder">
