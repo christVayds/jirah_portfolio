@@ -11,7 +11,7 @@ const data = {
     "tshirt_print": ["1.png", "2.jpg"],
     "other_graphics_matterial": [],
     "gouache": ["1.png", "2.png", "3.jpg", "4.jpg"],
-    "acrylic": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+    "acrylic": ["1.jpg", "2.jpg", "3.jpg"],
     "water": ["1.png", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
     "text_effects": ["1.png", "2.png", "3.png", "4.png"],
     "image_wrapping": ["1.png"],
@@ -34,7 +34,7 @@ const names = {
     "image_wrapping": "Image Wrapping",
     "brand_identity": "Brand Identity",
     "book_cover": "Book Cover",
-    "event_materials": "Events Matterial"
+    "event_materials": "Event Materials"
 }
 
 // get view
