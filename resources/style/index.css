@@ -460,9 +460,11 @@ body {
 
 .view .toView .categ.gallery img{
     width: 100%;
+    height: auto;
     margin-bottom: 15px;
     display: block;
     object-fit: cover;
+    break-inside: avoid;
     transition: transform 0.3s ease;
     animation: appear 0.5s ease-in-out;
 }
