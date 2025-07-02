@@ -13,7 +13,7 @@
 }
 
 :root{
-    --primary: #6E9FC1;
+    --primary: #00121f;
     --secondary: #A3CAE9;
     --error: #972f42;
     --background: #395A7F;
@@ -283,6 +283,7 @@ body {
 
 .body .side .greetings p span{
     color: var(--primary);
+    font-weight: bold;
 }
 
 .body .side .about{
@@ -296,6 +297,7 @@ body {
 
 .body .side .about span{
     color: var(--primary);
+    font-weight: bold;
 }
 
 .body .side .education{
