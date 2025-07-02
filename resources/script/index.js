@@ -10,7 +10,7 @@ const data = {
     "promotional_materials": ["1.png", "2.png", "3.png", "4.png", "5.png"],
     "tshirt_print": ["1.png", "2.jpg"],
     "other_graphics_matterial": [],
-    "gouache": ["1.png", "2.png", "3.jpg", "4.jpg", "5.jpg"],
+    "gouache": ["1.png", "2.png", "3.jpg", "4.jpg"],
     "acrylic": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
     "water": ["1.png", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
     "text_effects": ["1.png", "2.png", "3.png", "4.png"],
