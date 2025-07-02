@@ -263,13 +263,14 @@ body {
     padding: 10px;
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: center;
     text-align: justify;
     text-justify: inter-word;
 }
 
 .body .side{
-    width: 50%;
+    width: 40%;
+    margin: 10px;
 }
 
 .body .side .greetings{
@@ -411,13 +412,13 @@ body {
 .body .about_info{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     animation: appear 0.5s ease-in-out;
     margin-bottom: 20px;
 }
 
 .body .about_info .my_photo{
-    width: 500px;
+    width: 100%;
 }
 
 .body .about_info .my_photo img{
@@ -557,6 +558,7 @@ body {
 
     .body .side{
         width: 100%;
+        margin: 0;
     }
 
     .body .side.about_info{
@@ -577,6 +579,6 @@ body {
 }
 
 /* for debugging layout */
-.showBorder{
+/* .showBorder{
     border: 1px solid var(--border);
-}
+} */
