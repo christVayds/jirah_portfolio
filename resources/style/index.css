@@ -45,6 +45,7 @@ body {
     color: var(--text-primary);
     width: 100%;
     height: 100%;
+    /* border: 1px solid var(--primary); */
 }
 
 .popup{
@@ -126,14 +127,56 @@ body {
     color: var(--primary);
 }
 
+/* mobile drop down menu */
+.header .side.mobile{
+    position: relative;
+    display: none;
+    flex-direction: column;
+}
+
+.header .side.mobile i{
+    font-size: 50px;
+}
+
+.header .side.mobile .drop_down_content{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    text-align: end;
+    font-size: 50px;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 13, 27, 0.918);
+}
+
+.header .side.mobile .drop_down_content .dropItem{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header .side.mobile:hover .drop_down_content{
+    display: flex;
+}
+
+.header .side.mobile .drop_down_content .dropItem:hover{
+    color: var(--primary);
+}
+
 /* CATEGORIES */
 .categories{
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-top: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.categories::-webkit-scrollbar{
+    height: 2px;
 }
 
 .categories .list{
@@ -220,6 +263,8 @@ body {
     display: flex;
     align-items: start;
     justify-content: space-between;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .body .side{
@@ -229,6 +274,7 @@ body {
 .body .side .greetings{
     margin: 10px;
     letter-spacing: 2px;
+    height: 80px;
 }
 
 .body .side .greetings p{
@@ -362,16 +408,15 @@ body {
 
 /* right side of about page */
 .body .about_info{
-    min-height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: appear 0.5s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .body .about_info .my_photo{
     width: 500px;
-    min-height: 500px;
 }
 
 .body .about_info .my_photo img{
@@ -493,6 +538,40 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERY */
+@media(max-width: 768px) {
+    .header .side.desktop{
+        display: none;
+    }
+    .header .side.mobile{
+        display: flex;
+    }
+
+    .body{
+        flex-direction: column;
+    }
+
+    .body .side{
+        width: 100%;
+    }
+
+    .body .side.about_info{
+        order: -1;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .view .toView{
+        width: 100%;
+    }
+
+    .body .side .eduItem{
+        flex-direction: column;
     }
 }
 
