@@ -1,5 +1,5 @@
 import os
-import glob
+#import glob
 
 _path = "water/"
 extensions = [".jpg", ".jpeg", ".png"]
