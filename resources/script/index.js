@@ -3,21 +3,21 @@ const urlParams = new URLSearchParams(window.location.search)
 const view = urlParams.get('view')
 
 const data = {
-    "paintings": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg"],
+    "paintings": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp"],
     "calligraphy": [],
     "chibi_art": [],
-    "indoor_signages": ["1.jpg", "3.jpg", "5.jpg", "7.jpg", "9.jpg", "2.jpg", "4.jpg", "6.jpg", "8.jpg", "10.jpg"],
-    "promotional_materials": ["1.png", "2.png", "3.png", "4.png", "5.png"],
-    "tshirt_print": ["1.png", "2.jpg"],
+    "indoor_signages": ["1.webp", "3.webp", "5.webp", "7.webp", "9.webp", "2.webp", "4.webp", "6.webp", "8.webp", "10.webp"],
+    "promotional_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp"],
+    "tshirt_print": ["1.webp", "2.webp"],
     "other_graphics_matterial": [],
-    "gouache": ["1.png", "2.png", "3.jpg", "4.jpg"],
-    "acrylic": ["1.jpg", "2.jpg", "3.jpg"],
-    "water": ["1.png", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
-    "text_effects": ["1.png", "2.png", "3.png", "4.png"],
-    "image_wrapping": ["1.png"],
-    "brand_identity": ["1.png"],
-    "book_cover": ["1.png", "2.png"],
-    "event_materials": ["1.jpg", "2.png", "3.png", "4.png", "5.png"]
+    "gouache": ["1.webp", "2.webp", "3.webp", "4.webp"],
+    "acrylic": ["1.webp", "2.webp", "3.webp"],
+    "water": ["1.png", "2.webp", "3.webp", "4.webp", "5.webp"],
+    "text_effects": ["1.webp", "2.webp", "3.webp", "4.webp"],
+    "image_wrapping": ["1.webp"],
+    "brand_identity": ["1.webp"],
+    "book_cover": ["1.webp", "2.webp"],
+    "event_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp"]
 }
 
 const names = {

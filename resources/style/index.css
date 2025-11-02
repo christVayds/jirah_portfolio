@@ -16,9 +16,9 @@
     --primary: #00121f;
     --secondary: #A3CAE9;
     --error: #972f42;
-    --background: #395A7F;
-    --text-primary: #E9ECEE;
-    --text-secondary: #ACACAC;
+    --background: #f0f0dc;
+    --text-primary: #0e1a27;
+    --text-secondary: #575757;
     --border: #3c343f;
 }
 
@@ -202,7 +202,7 @@ body {
 
 .categories .list .listItem.selected{
     background-color: var(--primary);
-    color: var(--text-primary);
+    color: var(--background);
     font-weight: bold;
 }
 
@@ -226,6 +226,7 @@ body {
     overflow: hidden;
     position: relative;
     animation: appear 0.5s ease-in-out;
+    color: var(--background);
 }
 
 .cat_class .display_art .overflow{
@@ -254,6 +255,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
 }
 
 /* ABOUT */
@@ -261,24 +263,43 @@ body {
     margin-top: 20px;
     padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .body .side{
-    width: 40%;
+    width: 50%;
     margin: 10px;
 }
+
+/* .body .side.about_text{
+    width: 60%;
+} */
 
 .body .side .greetings{
     margin: 10px;
     letter-spacing: 2px;
-    height: 80px;
+    /* height: 80px; */
+}
+
+.body .side .greetings .myName{
+    font-size: 100px;
+    /* border: 1px solid var(--border); */
+}
+
+.body .side .greetings .myName p{
+    /* text-transform: uppercase; */
+    color: var(--text-primary);
+    line-height: 1;
 }
 
 .body .side .greetings p{
     color: var(--text-secondary);
+}
+
+.body .side .greetings p.profession{
+    margin-top: 20px;
+    font-size: 28px;
 }
 
 .body .side .greetings p span{
@@ -346,7 +367,7 @@ body {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -361,6 +382,30 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    margin-right: 10px;
+}
+
+/* contacts in about */
+.contactDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactDiv .contactItem{
+    min-width: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contactDiv .contactItem i{
     margin-right: 10px;
 }
 
@@ -389,7 +434,7 @@ body {
 
 .education .certificate .cert_lists li{
     color: var(--text-secondary);
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* Experience */
@@ -416,7 +461,7 @@ body {
     justify-content: end;
     animation: appear 0.5s ease-in-out;
     margin-bottom: 20px;
-    order: -1;
+    /* order: -1; */
 }
 
 .body .about_info .my_photo{
@@ -506,12 +551,18 @@ body {
 }
 
 .header .side .navItem:hover{
-    border-bottom: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--primary);
 }
 
 /* for the display art image overflow - make it darker when hover */
 .cat_class .display_art:hover .overflow{
-    background-color: rgba(0, 21, 48, 0.8);
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+}
+
+.cat_class .display_art:hover .classname{
+    display: block;
+    color: var(--primary);
 }
 
 /* for contact link */
@@ -520,7 +571,7 @@ body {
 }
 
 .categories .list .listItem:hover:not(.selected){
-    color: var(---dark);
+    color: var(--background);
     background-size: 100% 100%;
     transition: 0.4s ease;
 }
@@ -579,6 +630,15 @@ body {
 
     .body .side .eduItem{
         flex-direction: column;
+    }
+
+    .contactDiv{
+        flex-direction: column;
+    }
+
+    .body .side .eduItem .image{
+        width: 100%;
+        height: auto;
     }
 }
 
