@@ -105,6 +105,12 @@ body {
     padding: 10px;
 }
 
+.logoName{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
 /* navigation */
 .header .side .navItem{
     /* border: 1px solid var(--border); */
@@ -316,9 +322,9 @@ body {
     text-align: justify;
 }
 
-.body .side .about span{
-    color: var(--primary);
-    font-weight: bold;
+.body .side .about span:hover{
+    color: var(--error);
+    /* font-weight: bold; */
 }
 
 .body .side .education{
@@ -484,7 +490,7 @@ body {
 }
 
 .view .toView{
-    width: 80%;
+    width: 100%;
     min-height: 500px;
 }
 
@@ -499,19 +505,37 @@ body {
 }
 
 .view .toView .categ.gallery{
-    column-count: 2;
-    column-gap: 15px;
+    /* column-count: 4;
+    column-gap: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+.view .toView .description{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .view .toView .categ.gallery img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     margin-bottom: 15px;
     display: block;
     object-fit: cover;
     break-inside: avoid;
     transition: transform 0.3s ease;
     animation: appear 0.5s ease-in-out;
+    margin: 0 5px 5px;
+    /* flex: 1; */
 }
 
 .contact{
