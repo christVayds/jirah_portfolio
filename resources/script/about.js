@@ -37,16 +37,16 @@ certItem.forEach(item => {
         const classList = item.classList
         switch(classList[1]){
             case "1":
-                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-46-31.png"
+                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-46-31.webp"
                 break;
             case "2":
-                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-46-49.png"
+                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-46-49.webp"
                 break;
             case "3":
-                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-47-23.png"
+                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-47-23.webp"
                 break;
             case "4":
-                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-47-40.png"
+                popup.querySelector("img").src = "resources/assets/certificates/Screenshot from 2025-07-02 03-47-40.webp"
                 break;
         }
     })
