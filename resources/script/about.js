@@ -1,15 +1,28 @@
 const professionalism = ["Graphic Artist/Designer", "Freehand Mixed-Media Artist", "Computer Engineer"]
-var count = 0
+let index = 0
+let wordIndex = 0
+let word = ""
+let wait = 0
 
-function change(){
-    const imWhat = document.getElementById("imwhat")
-    imWhat.textContent = professionalism[count]
-    if(count >= professionalism.length -1){
-        count = 0
+let imWhat = document.getElementById("imwhat")
+let timer = setInterval(() => {
+    if(wait > 0){
+        wait--
     } else {
-        count++
+        word += professionalism[index][wordIndex]
+        imWhat.textContent = word
+        wordIndex++
+        if(wordIndex >= professionalism[index].length){
+            index++
+            wait = 10
+            if(index >= professionalism.length){
+                index = 0
+            }
+            word = ""
+            wordIndex = 0
+        }
     }
-}
+}, 50);
 
 const popup = document.getElementById("popup")
 const certItem = document.querySelectorAll(".certItem")
@@ -38,7 +51,3 @@ certItem.forEach(item => {
         }
     })
 })
-
-setTimeout(() => {
-    setInterval(change, 2000);
-}, 2000);

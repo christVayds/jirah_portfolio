@@ -8,7 +8,7 @@ const data = {
     "chibi_art": [],
     "indoor_signages": ["2.webp", "4.webp", "6.webp", "10.webp"],
     "promotional_materials": ["1.webp", "2.webp", "3.webp", "4.webp"],
-    "tshirt_print": ["1.png", "2.png", "3.png", "2.webp"],
+    "tshirt_print": ["1.png", "2.png", "3.png", "4.png"],
     "other_graphics_matterial": [],
     "gouache": ["1.webp", "2.webp", "3.webp", "4.webp"],
     "acrylic": ["1.webp", "2.webp", "3.webp"],
@@ -16,8 +16,9 @@ const data = {
     // "text_effects": ["1.webp", "2.webp", "3.webp", "4.webp"],
     // "image_wrapping": ["1.webp"],
     "brand_identity": ["1.png", "2.png", "3.png", "4.png"],
-    "book_cover": ["1.webp", "2.webp"],
-    "event_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp"]
+    "book_cover": ["1.png", "1.webp", "2.webp", "2.png"],
+    "event_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp"],
+    "digital_ads": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]
 }
 
 const names = {
@@ -26,6 +27,7 @@ const names = {
     "water": ["Watercolor Painting", ""],
     "calligraphy": ["Calligraphy", ""], 
     "chibi_art": ["Chibi art", ""], 
+    "digital_ads": ["Digital Ad Creatives", "A collection of promotional designs made for social media and e-commerce platforms such as Shopee, Lazada, and TikTok. Includes product visuals, brochures, and posters aimed at boosting engagement and sales. Some pieces feature my own customized product designs, allowing full creative control from concept to final layout."],
     "indoor_signages": ["Indoor Signages", "Design concepts and mockups for common indoor display signs, and other directional or informational designs, made to enhance visual clarity and style in interior spaces."], 
     "promotional_materials": ["Product Promotional Materials", ""], 
     "tshirt_print": ["T-Shirt Design", "Custom shirt graphics created for advocacy campaigns and reunion events, combining meaningful themes, cohesive color palettes, and striking visuals to make each design stand out."], 
