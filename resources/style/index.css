@@ -560,15 +560,18 @@ body {
 }
 
 .view .toView .categ.gallery{
-    /* column-count: 4;
-    column-gap: 15px; */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    white-space: nowrap;
     /* border: 1px solid var(--border); */
+}
+
+.view .toView .categ.gallery .rollGallery{
+    display: inline-flex;
+    height: 100%;
+    animation: scroll 10s infinite linear;
 }
 
 .view .toView .description{
@@ -594,6 +597,15 @@ body {
     animation: appear 0.5s ease-in-out;
     margin: 0 5px 5px;
     /* flex: 1; */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .contact{

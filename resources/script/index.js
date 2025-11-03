@@ -6,19 +6,19 @@ const data = {
     "paintings": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp", "9.webp", "10.webp", "11.webp"],
     "calligraphy": [],
     "chibi_art": [],
-    "indoor_signages": ["2.webp", "4.webp", "6.webp", "10.webp"],
-    "promotional_materials": ["1.webp", "2.webp", "3.webp", "4.webp"],
-    "tshirt_print": ["1.png", "2.png", "3.png", "4.png"],
+    "indoor_signages": ["2.webp", "4.webp", "6.webp", "10.webp", "2.webp", "4.webp", "6.webp", "10.webp"],
+    "promotional_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "1.webp", "2.webp", "3.webp", "4.webp"],
+    "tshirt_print": ["1.png", "2.png", "3.png", "4.png", "1.png", "2.png", "3.png", "4.png"],
     "other_graphics_matterial": [],
-    "gouache": ["1.webp", "2.webp", "3.webp", "4.webp"],
-    "acrylic": ["1.webp", "2.webp", "3.webp"],
-    "water": ["1.png", "2.webp", "3.webp", "4.webp", "5.webp"],
+    "gouache": ["1.webp", "2.webp", "3.webp", "4.webp", "1.webp", "2.webp", "3.webp", "4.webp"],
+    "acrylic": ["1.webp", "2.webp", "3.webp", "1.webp", "2.webp", "3.webp"],
+    "water": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp"],
     // "text_effects": ["1.webp", "2.webp", "3.webp", "4.webp"],
     // "image_wrapping": ["1.webp"],
-    "brand_identity": ["1.png", "2.png", "3.png", "4.png"],
-    "book_cover": ["1.png", "1.webp", "2.webp", "2.png"],
-    "event_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp"],
-    "digital_ads": ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]
+    "brand_identity": ["1.png", "2.png", "3.png", "4.png", "1.png", "2.png", "3.png", "4.png"],
+    "book_cover": ["1.png", "1.webp", "2.webp", "2.png", "1.png", "1.webp", "2.webp", "2.png"],
+    "event_materials": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp"],
+    "digital_ads": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg"]
 }
 
 const names = {
@@ -49,8 +49,10 @@ if(view){
 function getImages(view){
     const viewName = document.getElementById("viewName")
     const container = document.getElementById("showImages")
+    // const container2 = document.getElementById("showImages2")
     const imagedescription = document.getElementById("imagedescription")
     container.innerHTML = ""
+    // container2.innerHTML = ""
 
     viewName.textContent = names[view][0]
     for(const img in data[view]){
@@ -60,6 +62,7 @@ function getImages(view){
         image.loading = "lazy"
 
         container.appendChild(image)
+        // container2.appendChild(image)
     }
 
     const desc = names[view][1]
