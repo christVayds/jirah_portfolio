@@ -200,11 +200,7 @@ body {
     margin-right: 10px;
     cursor: pointer;
 
-    background: linear-gradient(to right, var(--primary), var(--secondary));
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    background-position: left;
-    transition: 0.5s ease;
+    transition: color 0.5s ease;
 }
 
 .categories .list .listItem.selected{
@@ -345,12 +341,10 @@ body {
 .body .side .education{
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid var(--border);
 }
 
 .body .side .edutitle{
-    padding: 5px;
-    padding-left: 10px;
+    /* padding: 5px; */
     color: var(--text-primary);
     letter-spacing: 5px;
 }
@@ -404,7 +398,7 @@ body {
 }
 
 .tools{
-    height: 200px;
+    min-height: 200px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -633,6 +627,21 @@ body {
 
 /* effects here */
 
+/* shadow effects */
+.titleShadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.contentShadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
 /* change this */
 .header .side .navItem:hover:not(.selected){
     /* font-weight:600; */
@@ -660,9 +669,8 @@ body {
 }
 
 .categories .list .listItem:hover:not(.selected){
-    color: var(--background);
-    background-size: 100% 100%;
-    transition: 0.4s ease;
+    color: var(--error);
+    transition: color 0.4s ease;
 }
 
 .education .certificate .cert_lists li:hover{
@@ -728,6 +736,19 @@ body {
     .body .side .eduItem .image{
         width: 100%;
         height: auto;
+    }
+
+    .tools{
+        flex-direction: column;
+    }
+
+    .tools .toolDiv.mult,
+    .tools .toolDiv{
+        width: 100%;
+    }
+
+    .body .side .greetings p.profession{
+        font-size: 20px;
     }
 }
 
