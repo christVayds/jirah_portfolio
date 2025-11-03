@@ -687,6 +687,7 @@ body {
 
 .education .certificate .cert_lists li:hover{
     color: var(--text-primary);
+    cursor: pointer;
 }
 
 .view .toView .categ.gallery img:hover{
