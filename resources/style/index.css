@@ -515,10 +515,6 @@ body {
     margin-top: 20px;
 }
 
-.education .experience .company{
-    color: var(--text-secondary);
-}
-
 .education .experience .works{
     list-style:circle;
     padding-left: 30px;
