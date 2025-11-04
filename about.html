@@ -21,17 +21,19 @@
                 <p>Artist</p>
             </div>
             <div class="side navigation desktop showBorder">
-                <a href="about.html" class="navItem selected">About</a>
+                <a href="about.html" class="navItem selected">Home</a>
+                <a href="about.html#background" class="navItem">About</a>
                 <a href="index.html" class="navItem">Works</a>
-                <a href="#background" class="navItem">Background</a>
+                <a href="about.html#contactList" class="navItem">Contact</a>
             </div>
 
             <div class="side navigation mobile showBorder">
                 <i class="fa-solid fa-bars"></i>
                 <div class="drop_down_content showBorder">
-                    <a href="about.html" class="dropItem selected">About</a>
+                    <a href="about.html" class="dropItem selected">Home</a>
+                    <a href="#background" class="dropItem">About</a>
                     <a href="index.html" class="dropItem">Works</a>
-                    <a href="#background" class="dropItem">Background</a>
+                    <a href="about.html#contactList" class="dropItem">Contact</a>
                 </div>
             </div>
         </div>
@@ -94,7 +96,7 @@
         </div>
 
         <!-- contacts -->
-        <div class="contactDiv showBorder">
+        <div class="contactDiv showBorder" id="contactList">
             <a href="mailto:jiraaahmae.teruel@gmail.com" class="contactItem showBorder">
                 <i class="fa-solid fa-at"></i>
                 <p class="value">jiraaahmae.teruel@gmail.com</p>
@@ -127,14 +129,21 @@
                     <div class="edutitle"><h2 class="titleShadow">CERTIFICATIONS</h2></div>
                     <div class="contentShadow">
                         <div class="certificate showBorder">
-                            <h3 class="cert_name">TESDA Online Program</h3>
-                            <p class="cert_link">https://www.tesda.gov.ph</p>
+                            <div class="cert">
+                                <div class="side logoSide">
+                                    <img src="resources/assets/icons/tesda-logo.png" alt="tesda" class="logo">
+                                </div>
+                                <div class="side">
+                                    <h3 class="cert_name">TESDA Online Program</h3>
+                                    <p class="cert_link">https://www.tesda.gov.ph</p>
+                                </div>
+                            </div>
                             <p class="cert_lists_label">VISUAL GRAPHIC DESIGN</p>
                             <ul class="cert_lists showBorder">
-                                <li><div class="certItem 1">Introduction to Visual Graphic Design</div></li>
-                                <li><div class="certItem 2">Developing Designs for Logo</div></li>
-                                <li><div class="certItem 3">Developing Designs for Print Media</div></li>
-                                <li><div class="certItem 4">Developing Designs for Product Packaging</div></li>
+                                <li><div class="certItem 1"><i class="fa-solid fa-link"></i><p>Introduction to Visual Graphic Design</p></div></li>
+                                <li><div class="certItem 2"><i class="fa-solid fa-link"></i><p>Developing Designs for Logo</p></div></li>
+                                <li><div class="certItem 3"><i class="fa-solid fa-link"></i><p>Developing Designs for Print Media</p></div></li>
+                                <li><div class="certItem 4"><i class="fa-solid fa-link"></i><p>Developing Designs for Product Packaging</p></div></li>
                             </ul>
                         </div>
                     </div>
@@ -189,11 +198,11 @@
                     <div class="contentShadow">
                         <div class="eduItem showBorder">
                             <div class="image showBorder">
-                                <img src="resources/assets/pup.webp" alt="school">
+                                <img src="resources/assets/icons/pup.png" alt="school">
                             </div>
                             <div class="school showBorder">
-                                <h3>Polytechnic University of the Philippines</h3>
-                                <p>BS in Computer Engineering</p>
+                                <p class="schoolName">Polytechnic University of the Philippines</p>
+                                <p class="course">BS in Computer Engineering</p>
                                 <p>Dean's Lister</p>
                                 <p>2019-2023</p>
                             </div>
@@ -201,11 +210,11 @@
 
                         <div class="eduItem showBorder">
                             <div class="image showBorder">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxWg9NkRM2HRpEArBaTGVp8ie390WT_gYjQ&s" alt="school">
+                                <img src="resources/assets/icons/ieti.png" alt="school">
                             </div>
                             <div class="school showBorder">
-                                <h3>IETI College of Science and Technology, Inc.</h3>
-                                <p>Science, Technology, Engineering and Mathematics</p>
+                                <p class="schoolName">IETI College of Science and Technology, Inc.</p>
+                                <p class="course">Science, Technology, Engineering and Mathematics</p>
                                 <p>With Honors</p>
                                 <p>2017-2019</p>
                             </div>

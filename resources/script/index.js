@@ -29,7 +29,7 @@ const names = {
     "chibi_art": ["Chibi art", ""], 
     "digital_ads": ["Digital Ad Creatives", "A collection of promotional designs made for social media and e-commerce platforms such as Shopee, Lazada, and TikTok. Includes product visuals, brochures, and posters aimed at boosting engagement and sales. Some pieces feature my own customized product designs, allowing full creative control from concept to final layout."],
     "indoor_signages": ["Indoor Signages", "Design concepts and mockups for common indoor display signs, and other directional or informational designs, made to enhance visual clarity and style in interior spaces."], 
-    "promotional_materials": ["Product Promotional Materials", ""], 
+    "promotional_materials": ["Product Promotional Materials", "Creative layouts for marketing collaterals designed to promote both products and services. Each design emphasizes clarity, visual appeal, and consistent branding to effectively communicate offers and attract potential customers."], 
     "tshirt_print": ["T-Shirt Design", "Custom shirt graphics created for advocacy campaigns and reunion events, combining meaningful themes, cohesive color palettes, and striking visuals to make each design stand out."], 
     "other_graphics_matterial": ["Other Graphic Matterials", ""],
     // "text_effects": "Text Effects",
